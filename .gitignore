@@ -1,4 +1,7 @@
 graph/__pycache__/
+graph/triangulation/__pycache__/
+graph/inference/__pycache__/
 helper/__pycache__/
+examples/.ipynb_checkpoints/
 .idea
 probabilistic_graphical_models.iml
