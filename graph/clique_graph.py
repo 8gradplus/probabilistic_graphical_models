@@ -5,6 +5,7 @@ from itertools import combinations
 def to_clique_graph(t: nx.Graph):
     """Compute clique graph from a triangulated graph T"""
     g = nx.Graph()
+    # could directly use networkx routine! chordal_graph_cliques(G)
     cliques = list(enumerate(set(c) for c in nx.find_cliques(t)))
     g.add_nodes_from((i, {'nodes': sorted(list(c))}) for i, c in cliques)
     clique_pairs = combinations(cliques, 2)
